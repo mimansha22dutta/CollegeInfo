@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeInfo - KIET College Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KIET College Information Hub</h1>
+        <p>Stay updated with the latest events, bootcamps, and hackathons!</p>
+    </header>
+
+    <section class="search-section">
+        <input type="text" id="search-bar" placeholder="Search events..." onkeyup="filterEvents()">
+        <select id="category-filter" onchange="filterEvents()">
+            <option value="all">All Categories</option>
+            <option value="hackathon">Hackathons</option>
+            <option value="bootcamp">Bootcamps</option>
+            <option value="seminar">Seminars</option>
+        </select>
+    </section>
+
+    <section class="event-listing">
+        <div class="event" data-category="hackathon">
+            <h3><a href="event-detail.html?event=1">Annual Coding Hackathon</a></h3>
+            <p>Date: 25th December 2024</p>
+            <p>A thrilling coding hackathon with prizes for the best team!</p>
+        </div>
+
+        <div class="event" data-category="bootcamp">
+            <h3><a href="event-detail.html?event=2">Web Development Bootcamp</a></h3>
+            <p>Date: 10th January 2025</p>
+            <p>Learn the fundamentals of web development in this hands-on bootcamp.</p>
+        </div>
+
+        <div class="event" data-category="seminar">
+            <h3><a href="event-detail.html?event=3">Cloud Computing Seminar</a></h3>
+            <p>Date: 20th November 2024</p>
+            <p>Join industry experts as they discuss the latest trends in cloud computing.</p>
+        </div>
+
+        <!-- More events go here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KIET College | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
